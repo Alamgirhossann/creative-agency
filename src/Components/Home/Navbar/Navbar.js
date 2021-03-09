@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import logo from '../../../images/logos/logo.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -25,7 +26,7 @@ const Navbar = () => {
                             <a class="nav-link underline" href="#">Contact Us</a>
                         </li>
                         <li style={{backgroundColor:"#111430",borderRadius:'5px',width:"100px"}} class="nav-item me-5">
-                            <a class="nav-link text-white text-center" href="#">Login</a>
+                            <Link class="nav-link text-white text-center" to="/login">Login</Link>
                         </li>
                     </ul>
                 </div>
